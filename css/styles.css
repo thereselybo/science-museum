@@ -373,10 +373,16 @@ footer hr {
 	position: relative;	
 }
 
-#news_article {
-		background: white;
-		width: 80%;
+.news_article {
+	flex: 1;
+	background-color: #fff;
+	width: 80%;
+	margin: 0 auto 30px auto;
 	}
+
+.col_copy{
+	padding: 20px 10px;
+}
 
 /* Visit
 ------------*/
