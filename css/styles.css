@@ -71,7 +71,7 @@ h1{
 	text-transform: uppercase;
 	/* letter-spacing: 0.2em; */
 	color: #127675;
-	margin: 10px 0;
+	margin: 20px 0;
 }
 
 h2{
@@ -81,6 +81,7 @@ h2{
 	text-transform: uppercase;
 	/* letter-spacing: 0.2em; */
 	color: #127675;
+	margin: 10px 0;
 }
 
 h3 {
@@ -270,7 +271,7 @@ footer hr {
 	text-transform: uppercase;
 	border-radius: 7px;
 /*	bottom: 20px;*/
-	top: 20px;
+	margin: 20px;
 }
 
 .img_content {
@@ -319,6 +320,10 @@ footer hr {
 
 #img_energy {
 	background: url("../images/energy.jpg") no-repeat;
+}
+
+#img_volunteer {
+	background: url("../images/volunteer.jpg") no-repeat;
 }
 
 /* Index 
@@ -396,6 +401,16 @@ footer hr {
 	position: relative;	
 }
 
+/*
+.map_container {
+	width: 100%;
+}
+*/
+
+.map_container iframe {
+	width: 100%;
+}
+
 /* Get involved 
 ----------- */
 #hero_involve {
@@ -411,16 +426,18 @@ footer hr {
 /* Mobile
 ---------------- */
 @media screen and (max-width: 599px){
-	#hero_index {
+	#hero_index, #hero_explore, #hero_exhibitions, #hero_events, #hero_visit, #hero_involve {
 		background-size: cover;
 		background-position: center;
 		height: 320px;
 	}
 	
+/*
 	#hero_explore, #hero_exhibitions, #hero_events, #hero_visit, #hero_involve {
 		background-size: contain;
 		height: 320px;
 	}
+*/
 	
 	#logo {
 		display: none;
@@ -481,7 +498,7 @@ footer hr {
 		height: 300px;
 	}
 	
-	#img_explore, #img_exhibitions, #img_kids, #img_teacher, #img_researcher, #img_evolution, #img_robotics, #img_cosmology, #img_professor, #img_night, #img_energy {
+	#img_explore, #img_exhibitions, #img_kids, #img_teacher, #img_researcher, #img_evolution, #img_robotics, #img_cosmology, #img_professor, #img_night, #img_energy, #img_volunteer {
 		width: 100%;
 		background-size: cover;
 		background-position: center;
@@ -490,12 +507,20 @@ footer hr {
 	.hide {
 		display: none;
 	}
+	
+	.visible_mobile {
+		display: inline-block;
+	}
+	
+	.visible_tablet {
+		display: none;
+	}
 }
 
 /* Tablet 
 ----------- */
 @media screen and (min-width: 600px) and (max-width: 1023px){
-	#hero_index {
+	#hero_index, #hero_explore, #hero_exhibitions, #hero_events, #hero_visit, #hero_involve{
 		background-size: contain;
 		height: 400px;
 	}
@@ -535,6 +560,18 @@ footer hr {
 		height: 300px;
 	}
 	
+/*
+	.content_copy {
+		padding: 20px 0;
+	}
+*/
+	
+	.content_copy p{
+		width: 80%;
+		padding: 10px;
+		margin: 0 auto;
+	}
+	
 	.sub_col_copy {
 		padding: 50px 0;
 	}
@@ -543,14 +580,33 @@ footer hr {
 		margin: 25px 20px;
 	}
 	
+	.researcher h2 {
+		margin-top: 40px;
+	}
+	
 	.sub_container {
 		display: flex;
 		flex-direction: row;
 	}
 	
+	.content_events .col_container {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.content_events .sub_container {
+		display: flex;
+		flex-direction: column;
+	}
+	
 	.col_2, .col_3 {
 		flex: 1;
 		margin: 0;
+	}
+	
+	.content_events .col_2, .content_events .col_3 {
+		flex: 1;
+		margin: 0 auto 30px auto;
 	}
 	
 	.col_left {
@@ -563,13 +619,7 @@ footer hr {
 		order: 2;
 	}
 	
-	#img_explore {
-		width: 100%;
-		background-size: cover;
-		background-position: center;
-	}
-	
-	#img_exhibitions {
+	#img_explore, #img_exhibitions, #img_kids, #img_teacher, #img_researcher, #img_evolution, #img_robotics, #img_cosmology, #img_professor, #img_night, #img_energy, #img_volunteer {
 		width: 100%;
 		background-size: cover;
 		background-position: center;
@@ -578,6 +628,15 @@ footer hr {
 	.hide {
 		display: none;
 	}
+	
+	.visible_mobile {
+		display: none;
+	}
+	
+	.visible_tablet {
+		display: inline-block;
+	}
+	
 }
 
 
@@ -590,6 +649,12 @@ footer hr {
 		background-position: top;
 	}
 	
+	#hero_explore, #hero_exhibitions, #hero_events, #hero_visit, #hero_involve{
+		background-size: cover;
+		background-position: center;
+		height: 600px;
+	}
+	
 	.logo_icon {
 		width: 120px;
 		margin-bottom: 50px;
@@ -598,6 +663,10 @@ footer hr {
 	
 	.header_content {
 		padding: 150px 0;
+	}
+	
+	h1 {
+		margin: 40px auto;
 	}
 	
 	.sub_nav {
@@ -621,6 +690,12 @@ footer hr {
 		height: 300px;
 	}
 	
+	.content_copy p{
+		width: 90%;
+		padding: 10px;
+		margin: 0 auto;
+	}
+	
 	.sub_col_copy {
 		margin: 0 auto;
 		width: 80%;
@@ -631,14 +706,45 @@ footer hr {
 		margin: 25px 20px;
 	}
 	
+	.researcher h2 {
+		margin-top: 40px;
+	}
+	
+	.narrow {
+		width: 60%;
+		margin: 0 auto;
+		padding: 40px 0;
+	}
+	
+	.standalone {
+		background: white;
+	}
+	
 	.sub_container {
 		display: flex;
 		flex-direction: row;
 	}
 	
-	.col_2, .col_3 {
+	.content_events .col_container {
+		display: flex;
+		flex-direction: row;
+		padding: 20px 50px 0 ;
+	}
+	
+	.content_events .sub_container {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+	}
+	
+	.col_2, .col_3, .col_4 {
 		flex: 1;
 		margin: 0;
+	}
+	
+	.content_events .col_1, .content_events .col_2, .content_events .col_3 {
+		flex: 1;
+		margin: 0 40px;
 	}
 	
 	.col_left {
@@ -651,13 +757,7 @@ footer hr {
 		order: 2;
 	}
 	
-	#img_explore {
-		width: 100%;
-		background-size: cover;
-		background-position: center;
-	}
-	
-	#img_exhibitions {
+	#img_explore, #img_exhibitions, #img_kids, #img_teacher, #img_researcher, #img_evolution, #img_robotics, #img_cosmology, #img_professor, #img_night, #img_energy, #img_volunteer {
 		width: 100%;
 		background-size: cover;
 		background-position: center;
@@ -668,6 +768,14 @@ footer hr {
 	}
 	
 	.hide {
+		display: none;
+	}
+	
+	.visible_desktop {
+		display: inline-block;
+	}
+	
+	.invisible_desktop {
 		display: none;
 	}
 }
