@@ -62,11 +62,12 @@ body {
 	font-weight: 400;
 	color: #231f20;
 	background-color: #f3f4f2;
+/*	background-color: white;*/
 }
 
 h1{
 /*	font-family: 'MADE Evolve Sans EVO', 'Source Sans Pro', 'Trebuchet MS' sans-serif;*/
-	font-family: 'MADE Evolve Sans EVO' sans-serif;
+	font-family: 'MADE Evolve Sans EVO', sans-serif;
 	font-size: 1.8em;
 	text-transform: uppercase;
 	/* letter-spacing: 0.2em; */
@@ -76,7 +77,7 @@ h1{
 
 h2{
 /*	font-family: 'MADE Evolve Sans', 'Source Sans Pro', 'Trebuchet MS' sans-serif;*/
-	font-family: 'MADE Evolve Sans' sans-serif;
+	font-family: 'MADE Evolve Sans', sans-serif;
 	font-size: 1.5em;
 	text-transform: uppercase;
 	/* letter-spacing: 0.2em; */
@@ -199,7 +200,7 @@ footer hr {
 #main_nav label {
 	display: inline-block;
 	color: #fff;
-	background: #a02620;
+/*	background: #a02620;*/
 	font-size: 2.5em;
 /*	font-weight: 200;*/
 	padding: 10px;
@@ -223,8 +224,15 @@ footer hr {
 
 #main_nav input:checked ~ label{
 	position: absolute;
-	margin-right: 0;
+	text-align: right;
 }
+
+/*
+#hamburger {
+	text-align: right;
+	margin: 0;
+}
+*/
 
 .sub_nav {
 /*	overflow: visible;*/
@@ -302,8 +310,16 @@ footer hr {
 	background: url("../images/evolution.jpg") no-repeat;
 }
 
+#img_biology {
+	background: url("../images/biology.jpg")
+}
+
 #img_robotics {
 	background: url("../images/robotics.jpg") no-repeat;
+}
+
+#img_ecology {
+	background: url("../images/ecology.jpg")
 }
 
 #img_cosmology {
@@ -498,7 +514,7 @@ footer hr {
 		height: 300px;
 	}
 	
-	#img_explore, #img_exhibitions, #img_kids, #img_teacher, #img_researcher, #img_evolution, #img_robotics, #img_cosmology, #img_professor, #img_night, #img_energy, #img_volunteer {
+	#img_explore, #img_exhibitions, #img_kids, #img_teacher, #img_researcher, #img_evolution, #img_robotics, #img_cosmology, #img_professor, #img_night, #img_energy, #img_volunteer, #img_biology, #img_ecology {
 		width: 100%;
 		background-size: cover;
 		background-position: center;
@@ -580,9 +596,18 @@ footer hr {
 		margin: 25px 20px;
 	}
 	
+/*
 	.researcher h2 {
 		margin-top: 40px;
 	}
+*/
+	
+/*
+	.content_explore .content_copy {
+		display: table-cell;
+		vertical-align: middle;
+	}
+*/
 	
 	.sub_container {
 		display: flex;
@@ -594,7 +619,7 @@ footer hr {
 		flex-direction: column;
 	}
 	
-	.content_events .sub_container {
+	.content_events .sub_container, .content_exhibitions .sub_container {
 		display: flex;
 		flex-direction: column;
 	}
@@ -609,20 +634,26 @@ footer hr {
 		margin: 0 auto 30px auto;
 	}
 	
-	.col_left {
+	.content_index .col_left, .content_explore .col_left  {
 		flex: 50%;
 		order: 1;
 	}
 	
-	.col_right {
+	.content_index .col_right, .content_explore .col_right {
 		flex: 50%;
 		order: 2;
 	}
 	
-	#img_explore, #img_exhibitions, #img_kids, #img_teacher, #img_researcher, #img_evolution, #img_robotics, #img_cosmology, #img_professor, #img_night, #img_energy, #img_volunteer {
+	#img_explore, #img_exhibitions, #img_kids, #img_teacher, #img_researcher, #img_evolution, #img_robotics, #img_cosmology, #img_professor, #img_night, #img_energy, #img_biology, #img_ecology {
 		width: 100%;
 		background-size: cover;
 		background-position: center;
+	}
+	
+	#img_volunteer {
+		width: 100%;
+		background-size: cover;
+		background-position: top;
 	}
 	
 	.hide {
@@ -696,6 +727,10 @@ footer hr {
 		margin: 0 auto;
 	}
 	
+	.content_involve p {
+		width: 70%;
+	}
+	
 	.sub_col_copy {
 		margin: 0 auto;
 		width: 80%;
@@ -706,9 +741,11 @@ footer hr {
 		margin: 25px 20px;
 	}
 	
+/*
 	.researcher h2 {
 		margin-top: 40px;
 	}
+*/
 	
 	.narrow {
 		width: 60%;
@@ -737,7 +774,36 @@ footer hr {
 		flex-direction: column;
 	}
 	
-	.col_2, .col_3, .col_4 {
+	.content_visit .col_container {
+		display: flex;
+		flex-direction: row;
+	}
+	
+	.content_visit .sub_container {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+	}
+	
+	.content_visit p {
+		width: 60%;
+	}
+	
+	.map_container iframe {
+		height: 300px;
+	}
+	
+	.content_copy {
+		position: relative;
+	}
+	
+	.center {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	
+	.col_2, .col_3, .col_4, .col_5 {
 		flex: 1;
 		margin: 0;
 	}
@@ -757,10 +823,16 @@ footer hr {
 		order: 2;
 	}
 	
-	#img_explore, #img_exhibitions, #img_kids, #img_teacher, #img_researcher, #img_evolution, #img_robotics, #img_cosmology, #img_professor, #img_night, #img_energy, #img_volunteer {
+	#img_explore, #img_exhibitions, #img_kids, #img_teacher, #img_researcher, #img_evolution, #img_robotics, #img_cosmology, #img_professor, #img_night, #img_energy, #img_biology, #img_ecology {
 		width: 100%;
 		background-size: cover;
 		background-position: center;
+	}
+	
+	#img_volunteer {
+		width: 100%;
+		background-size: cover;
+		background-position: top;
 	}
 	
 	.hover_visible {
