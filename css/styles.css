@@ -174,6 +174,7 @@ footer hr {
 /*	z-index: 3;*/
 }
 
+/*
 #main_nav {
 	position: absolute;
 	right: 0;
@@ -200,9 +201,9 @@ footer hr {
 #main_nav label {
 	display: inline-block;
 	color: #fff;
-/*	background: #a02620;*/
+	background: #a02620; (pre-commented out)
 	font-size: 2.5em;
-/*	font-weight: 200;*/
+	font-weight: 200; (pre-commented out)
 	padding: 10px;
 }
 
@@ -226,6 +227,7 @@ footer hr {
 	position: absolute;
 	text-align: right;
 }
+*/
 
 /*
 #hamburger {
@@ -267,6 +269,132 @@ footer hr {
 .sub_nav a{
 	text-decoration: none;
 }
+
+/* Hamburger nav 
+----------------*/
+nav{
+	width: 300px;
+/*	height: 100vh;*/
+}
+
+#menu_toggle a{
+	text-decoration: none;
+	color: white;
+	transition: color 0.3s ease;
+}
+
+#menu_toggle li a:hover{
+	border-bottom: solid 2px;
+	border-bottom-color: #e7ad3c;
+}
+
+#menu_toggle{
+/*			width: 100%;*/
+	height: 80vh;
+	display: block;
+/*	position: absolute;*/
+	position: fixed;
+	top: 50px;
+	right: 50px;
+	z-index: 4;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+#menu_toggle input{
+	display: block;
+	width: 40px;
+	height: 32px;
+	position: absolute;
+	top: -7px;
+	left: -5px;
+	cursor: pointer;
+	opacity: 0;
+	z-index: 5;
+	-webkit-touch-callout: none;
+}
+
+#menu_toggle span{
+	display: block;
+	width: 33px;
+	height: 3px;
+	margin-bottom: 6px;
+	position: relative;
+	/*			background: black;*/
+	background: white;
+	/*		  border-radius: 3px;*/
+	z-index: 4;
+	transform-origin: 4px 0px;
+	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+			  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+			  opacity 0.55s ease;
+}
+
+#menu_toggle span:first-child{
+	transform-origin: 0% 0%;
+}
+
+#menu_toggle span:nth-last-child(2){
+	transform-origin: 0% 100%;
+}
+
+#menu_toggle input:checked ~ span{
+	opacity: 1;
+	transform: rotate(45deg) translate(-2px, -1px);
+	/*		  background: black;*/
+	background: white;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+#menu_toggle input:checked ~ span:nth-last-child(3){
+	opacity: 0;
+	transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menu_toggle input:checked ~ span:nth-last-child(2){
+	opacity: 1;
+	transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+/*		  width: 100%;*/
+	
+	height: 100%;
+	margin: -100px 0 0 0;
+  	padding: 50px;
+  	padding-top: 125px;
+  	right: -100px;
+/*		  background: #ededed;*/
+	background: linear-gradient(
+		rgba(0, 0, 0, 0.7),
+		rgba(0, 0, 0, 0.9));
+/*			background: black;*/
+  	list-style-type: none;
+  	-webkit-font-smoothing: antialiased;
+  	transform-origin: 0% 0%;
+  	transform: translate(100%, 0);
+  	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li{
+	padding: 10px 0;
+	font-size: 22px;
+	flex: 1;
+/*	height: 16vh;*/
+}
+
+
+
+#menu_toggle input:checked ~ ul{
+	transform: scale(1.0, 1.0);
+	opacity: 1;
+}
+
 
 /* Graphics
 ----------- */
@@ -475,10 +603,44 @@ footer hr {
 	}
 */
 	
+/*
 	.nav_header{
 		display: block;
 		background: rgba (0, 0, 0, 0.75);
 		height: 100px;
+	}
+*/
+	
+/*
+	#menu_toggle input {
+		padding: 10px;
+		background: black;
+		border-radius: 50%;
+	}
+*/
+/*	THIS DOESNT WORK YET, is supposed to add a background to the hamburger symbol*/
+	
+	.nav_header {
+		background: linear-gradient(
+			rgba(0, 0, 0, 0.6),
+			rgba(0, 0, 0, 0.6));
+		width: 65px;
+		height: 55px;
+		border-radius: 0 0 0 50%;
+		right: 0;
+		top: 0;
+		position: fixed;
+		z-index: 3;
+	}
+	
+	#menu {
+		width: 300px;
+		padding: 150px 50px 150px 0;
+	}
+	
+	#menu_toggle{
+		top: 15px;
+		right: 15px;
 	}
 	
 	.sub_nav {
@@ -553,6 +715,29 @@ footer hr {
 	
 	.header_content {
 		padding: 70px 0;
+	}
+	
+		.nav_header {
+		background: linear-gradient(
+			rgba(0, 0, 0, 0.6),
+			rgba(0, 0, 0, 0.6));
+		width: 65px;
+		height: 55px;
+		border-radius: 0 0 0 50%;
+		right: 0;
+		top: 0;
+		position: fixed;
+		z-index: 3;
+	}
+	
+	#menu {
+		width: 300px;
+		padding: 150px 50px 150px 0;
+	}
+	
+	#menu_toggle{
+		top: 15px;
+		right: 15px;
 	}
 	
 	.sub_nav {
@@ -698,6 +883,16 @@ footer hr {
 	
 	h1 {
 		margin: 40px auto;
+	}
+	
+	#menu {
+		width: 300px;
+	}
+	
+	#menu_toggle span {
+		-webkit-box-shadow: 4px 3px 6px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 4px 3px 6px 0px rgba(0,0,0,0.75);
+		box-shadow: 4px 3px 6px 0px rgba(0,0,0,0.75);
 	}
 	
 	.sub_nav {
