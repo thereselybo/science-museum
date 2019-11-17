@@ -15,61 +15,27 @@
 	<body>
 		<header role="banner" class="clearfix">
 			<div class="nav_header">
-<!--					<img src="images/icon_hamburger.svg" class="" width="50px">-->
-<!--
-				<nav role="navigation" id="main_nav">
-					<label for="hamburger">&#9776;</label>
-					<input type="checkbox" id="hamburger"/>
--->
-<!--
-					<ul>
-						<li><a href="index.htm">Home</a></li>
-						<li><a href="explore.htm">Explore</a></li>
-						<li><a href="exhibitions.htm">Exhibition Spaces</a></li>
-						<li><a href="events.htm">Special Events</a></li>
-						<li><a href="visit.htm">Visit</a></li>
-						<li><a href="involve.htm">Get Involved</a></li>
-					</ul>
-				</nav>
--->
-<!--
-				<nav role="navigation" id="main_nav">
-					<input type="checkbox" id="toggle">
-					<label for="toggle">
-						<span class="burger">&#9776;</span>
-						<span class="close">&#10060;</span>
-					</label>
-					<div class="menu">
-						<div><a href="index.htm">Home</a></div>
-						<div><a href="explore.htm">Explore</a></div>
-						<div><a href="exhibitions.htm">Exhibition Spaces</a></div>
-						<div><a href="events.htm">Special Events</a></div>
-						<div><a href="visit.htm">Visit</a></div>
-						<div><a href="involve.htm">Get Involved</a></div>
-					</div>
-				</nav>
--->
-				<nav role='navigation'>
-					<div id="menu_toggle">
-						<input type="checkbox" />
-						<span></span>
-						<span></span>
-						<span></span>
-						<ul id="menu">
-							<li><a href="index.htm">Home</a></li>
-							<li><a href="explore.htm">Explore</a></li>
-							<li><a href="exhibitions.htm">Exhibition Spaces</a></li>
-							<li><a href="events.htm">Special Events</a></li>
-							<li><a href="visit.htm">Visit</a></li>
-							<li><a href="involve.htm">Get Involved</a></li>
-						</ul>
-					</div>
+				<input id="burger" type="checkbox" />
+				<label for="burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</label>
+				<nav role="navigation">
+				  <ul>
+					<li><a href="index.htm">Home</a></li>
+					<li><a href="explore.htm">Explore</a></li>
+					<li><a href="exhibitions.htm">Exhibition Spaces</a></li>
+					<li><a href="events.htm">Special Events</a></li>
+					<li><a href="visit.htm">Visit</a></li>
+					<li><a href="involve.htm">Get Involved</a></li>
+				  </ul>  
 				</nav>
 			</div>
 			<section class="hero" id="hero_index">
-				<img src="images/logo_full.svg" id="logo" width="200px">
+				<a href="index.htm"><img src="images/logo_full.svg" id="logo" width="200px"></a>
                 <div class="header_content">
-                    <img src="images/logo.svg" class="logo_icon" alt="Logo">
+					<a href="index.htm"><img src="images/logo.svg" class="logo_icon" alt="Logo"></a>
                     <h2>"Explore together"</h2>
                 </div>
             </section>
@@ -113,7 +79,7 @@
                         	</div>
 						</a>
                         <div class="col_right sub_col_copy sub_col_2">
-                            <h2>Explore</h2>
+                            <a href="explore.htm"><h2>Explore</h2></a> 
                             <hr>
                             <p>Are you a young person looking to learn more about science? Come on down to our museum, there's plenty to see and do.</p>
                             <a href="explore.htm" class="btn">Read more</a> 
@@ -125,7 +91,7 @@
 							</div>
 						</a>
                         <div class="col_left sub_col_copy sub_col_2">
-                            <h2>Exhibitions</h2>
+                            <a href="exhibitions.htm"><h2>Exhibitions</h2></a>
                             <hr>
                             <p>Are you interested in our exhibition spaces? Have a look at what areas you might stumble upon during your visit.</p>
                             <a href="exhibitions.htm" class="btn">Read more</a>
@@ -135,18 +101,18 @@
             </section>
 		</main>
 		<footer role="contentinfo">
-            <hr>
-            <h3>Contact us</h3>
-            <p>
-                +47 123 45 678 <br>
-                mail@sciencemuseum.no <br>
-                Tøyengata 53, 0578 Oslo
-            </p>
-            <p>
-                <a href="#" target="_blank" title="Follow us on Facebook"><i class="fab fa-facebook-square"></i></a>
-                <a href="#" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" target="_blank" title="Follow us on LinkedIn"><i class="fab fa-linkedin"></i></a>
-            </p>
+			<hr>
+			<section class="contact_info">
+				<h3>Contact us</h3>
+				<p>
+					+47 123 45 678 <br>
+					mail@sciencemuseum.no <br>
+					Tøyengata 53, 0578 Oslo
+				</p>
+				<a href="#" target="_blank" title="Follow us on Facebook"><i class="fab fa-facebook-square"></i></a>
+				<a href="#" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+				<a href="#" target="_blank" title="Follow us on LinkedIn"><i class="fab fa-linkedin"></i></a>
+			</section>
         </footer>
 	</body>
 </html>
