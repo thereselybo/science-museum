@@ -2,6 +2,7 @@
 ---------- 
 Dark gray - #231f20 - body
 Bluegreen - #127675 - headers
+Dark bluegreen - #126664 - footer
 Light greige - #f3f4f2 - background
 Yellow - #e7ad3c - lines
 Pink red - #e45759 - buttons etc
@@ -62,25 +63,20 @@ body {
 	font-weight: 400;
 	color: #231f20;
 	background-color: #f3f4f2;
-/*	background-color: white;*/
 }
 
 h1{
-/*	font-family: 'MADE Evolve Sans EVO', 'Source Sans Pro', 'Trebuchet MS' sans-serif;*/
 	font-family: 'MADE Evolve Sans EVO', sans-serif;
 	font-size: 1.8em;
 	text-transform: uppercase;
-	/* letter-spacing: 0.2em; */
 	color: #127675;
 	margin: 20px 0;
 }
 
 h2{
-/*	font-family: 'MADE Evolve Sans', 'Source Sans Pro', 'Trebuchet MS' sans-serif;*/
 	font-family: 'MADE Evolve Sans', sans-serif;
 	font-size: 1.5em;
 	text-transform: uppercase;
-	/* letter-spacing: 0.2em; */
 	color: #127675;
 	margin: 10px 0;
 }
@@ -133,22 +129,13 @@ header h2 {
 
 }
 
-.logo_icon {
-/*
-	margin: 0 auto; 
- 	position: absolute;
-	margin-top: 200px;
-	margin: 100px auto 30px auto;
-*/
-}
-
 .contact_info {
-	color: #127675;
+	color: #126664;
 	padding: 20px 0;
 }
 
 .contact_info h3, .contact_info p, .contact_info a {
-	opacity: 0.6;
+	opacity: 0.7;
 }
 
 .contact_info a:hover {
@@ -164,7 +151,7 @@ footer hr {
 }
 
 .fab {
-	color: #127675;
+	color: #126664;
 	margin: 10px;
 	font-size: 1.5em;
 }
@@ -173,27 +160,18 @@ footer hr {
 -------- */
 
 .sub_nav {
-/*	overflow: visible;*/
 	display: flex;
-/*	flex-direction: row;*/
-/*	height: 200px;*/
 	width: 60%;
 	margin: 0 auto;
 }
 
 .sub_nav div{
-/*	display: inline-block;*/
 	background: #e45759;
 	border-radius: 10px;
 	width: 200px; 
-/*	height: 200px; */
-/*	padding-top: 50px;*/
-/*	margin: -100px 20px 0;*/
-/*	margin: -100px 0 0 0;*/
 	position: relative;
 	z-index: 2;
 	flex: 1;
-/*	overflow: auto;*/
 	transition: all .3s ease-in-out;
 	
 }
@@ -229,28 +207,7 @@ input + label {
 	z-index: 5;
 }
 
-/*
 span {
-	position: absolute;
-	width: 100%;
-	height: 2px;
-	top: 50%;
-	margin-top: -1px;
-	left: 0;
-	display: block;
-	background: white;
-	transition: .5s;
-}
-span:first-child {
-	top: 3px; 
-}
-
-span:last-child {
-	top: 16px; 
-}
-*/
-
-span{
 	display: block;
 	width: 33px;
 	height: 2px;
@@ -258,25 +215,7 @@ span{
 	position: relative;
 	background: white;
 	z-index: 4;
-/*
-	transform-origin: 4px 0px;
-	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-			  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-			  opacity 0.55s ease;
-*/
 }
-
-/*
-span:first-child{
-	transform-origin: 0% 0%;
-}
-*/
-
-/*
-span:nth-last-child(2){
-	transform-origin: 0% 100%;
-}
-*/
 
 nav {
 	display: none;
@@ -285,9 +224,9 @@ nav {
 label:hover {
 	cursor: pointer;
 	opacity: 0.7;
-	-webkit-transition: opacity 0.3s;
-	-o-transition: opacity 0.3s;
-	transition: opacity 0.3s;
+	-webkit-transition: opacity .3s;
+	-o-transition: opacity .3s;
+	transition: opacity .3s;
 }
 
 input:checked ~ nav {
@@ -361,7 +300,7 @@ input:checked ~ nav ul li a{
 	text-transform: uppercase;
 	border-radius: 7px;
 /*	bottom: 20px;*/
-	margin: 20px;
+	margin: 30px;
 }
 
 .img_content {
@@ -503,12 +442,6 @@ input:checked ~ nav ul li a{
 	position: relative;	
 }
 
-/*
-.map_container {
-	width: 100%;
-}
-*/
-
 .map_container iframe {
 	width: 100%;
 }
@@ -534,13 +467,6 @@ input:checked ~ nav ul li a{
 		height: 320px;
 	}
 	
-/*
-	#hero_explore, #hero_exhibitions, #hero_events, #hero_visit, #hero_involve {
-		background-size: contain;
-		height: 320px;
-	}
-*/
-	
 	#logo {
 		display: none;
 	}
@@ -553,13 +479,6 @@ input:checked ~ nav ul li a{
 	.header_content {
 		padding: 60px 0;
 	}
-	
-/*
-	nav ul li a{
-		width: 40vw;
-		margin:0 auto;
-	}
-*/
 	
 	nav ul {
 		width: 60vw;
@@ -646,6 +565,14 @@ input:checked ~ nav ul li a{
 		padding: 70px 0;
 	}
 	
+	h2 {
+		margin: 20px auto;
+	}
+	
+	hr {
+		margin: 20px auto 25px auto;
+	}
+	
 	nav ul {
 		width: 30vw;
 		left: 35vw;
@@ -677,12 +604,6 @@ input:checked ~ nav ul li a{
 		height: 300px;
 	}
 	
-/*
-	.content_copy {
-		padding: 20px 0;
-	}
-*/
-	
 	.content_copy p{
 		width: 80%;
 		padding: 10px;
@@ -697,12 +618,6 @@ input:checked ~ nav ul li a{
 		margin: 25px 20px;
 	}
 	
-/*
-	.content_explore .content_copy {
-		display: table-cell;
-		vertical-align: middle;
-	}
-*/
 	.content_explore .sub_container {
 		position: relative;
 		height: 300px;
@@ -788,7 +703,6 @@ input:checked ~ nav ul li a{
 	
 }
 
-
 /* Desktop
 ------------ */
 @media only screen and (min-width: 1024px) {
@@ -826,11 +740,9 @@ input:checked ~ nav ul li a{
 	
 	.sub_nav {
 		width: 60%;
-/*		height: 100px;*/
 	}
 	
 	.sub_nav div{
-/*		height: 200px;*/
 		padding: 70px 0;
 		margin: -100px 20px 0;
 		overflow: visible;
@@ -864,12 +776,6 @@ input:checked ~ nav ul li a{
 	.sub_col_copy p {
 		margin: 25px 20px;
 	}
-	
-/*
-	.researcher h2 {
-		margin-top: 40px;
-	}
-*/
 	
 	.narrow {
 		width: 60%;
