@@ -18,7 +18,7 @@ html, body, div, section, h1, h2, h3, p, ul, li, a{
 /* Global
 ----------- */
 
-@font-face {
+/* @font-face {
 	font-family: "made_evolve_sansregular";
 	src: url('../fonts/made_evolve_sans_regular.otf') format('opentype'),
 		url('../fonts/made_evolve_sans_regular.woff2') format('woff'),
@@ -34,7 +34,7 @@ html, body, div, section, h1, h2, h3, p, ul, li, a{
 		url('../fonts/made_evolve_sans_regular_evo.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
-}
+} */
 
 
 @font-face {
@@ -71,6 +71,7 @@ h1{
 	text-transform: uppercase;
 	color: #127675;
 	margin: 20px 0;
+	font-weight: 500;
 }
 
 h2{
@@ -79,6 +80,7 @@ h2{
 	text-transform: uppercase;
 	color: #127675;
 	margin: 10px 0;
+	font-weight: 500;
 }
 
 h3 {
@@ -134,7 +136,7 @@ header h2 {
 	padding: 20px 0;
 }
 
-.contact_info h3, .contact_info p, .contact_info a {
+.contact_info h3, .contact_info li, .contact_info a {
 	opacity: 0.7;
 }
 
@@ -173,7 +175,6 @@ footer hr {
 	z-index: 2;
 	flex: 1;
 	transition: all .3s ease-in-out;
-	
 }
 
 .sub_nav div:hover{
@@ -260,13 +261,13 @@ nav ul li a {
 	text-decoration: none;
 	text-transform: uppercase;
 	color: white;
-	font-family: "made_evolve_sansregular";
+	font-family: 'MADE Evolve Sans';
 	display: block;
 	padding: 30px;
 	margin: 0 auto;
 }
 
-nav ul li a:hover{
+nav ul li a:hover, .active{
 	border-bottom: solid 2px;
 	border-bottom-color: #e7ad3c;
 }
@@ -300,7 +301,14 @@ input:checked ~ nav ul li a{
 	text-transform: uppercase;
 	border-radius: 7px;
 /*	bottom: 20px;*/
-	margin: 30px;
+	/* margin: 30px; */
+	display: inline-block;  
+	transition: all ease-in .2s;
+}
+
+.btn:hover {
+	transform: scale(1.1);
+	transition: all ease-in .2s;
 }
 
 .img_content {
@@ -446,6 +454,11 @@ input:checked ~ nav ul li a{
 	width: 100%;
 }
 
+.content_visit {
+	width: 80%;
+	margin: 0 auto;
+}
+
 /* Get involved 
 ----------- */
 #hero_involve {
@@ -498,7 +511,7 @@ input:checked ~ nav ul li a{
 	
 	.sub_nav div{
 		height: 150px;
-		padding: 20px 0;
+		padding: 20px;
 		margin: -100px 5px 0;
 		overflow: visible;
 	}
@@ -584,13 +597,15 @@ input:checked ~ nav ul li a{
 	}
 	
 	.sub_nav {
-		width: 75%;
+		/* width: 75%; */
+		min-width: 60%;
+		max-width: 750px;
 		height: 120px;
 	}
 	
 	.sub_nav div{
 		height: 150px;
-		padding: 30px 0;
+		padding: 30px 20px;
 		margin: -100px 10px 0;
 		overflow: visible;
 	}
@@ -739,7 +754,8 @@ input:checked ~ nav ul li a{
 	}
 	
 	.sub_nav {
-		width: 60%;
+		min-width: 55%;
+		max-width: 750px;
 	}
 	
 	.sub_nav div{
@@ -750,16 +766,21 @@ input:checked ~ nav ul li a{
 	
 	.copy_wide {
 		width: 75%;
+		max-width: 900px;
 		margin: 30px auto;
 	}
 	
 	.img_content {
 		height: 300px;
 	}
+
+	.content_explore .img_content, .content_exhibitions .img_content {
+		height: 400px;
+	}
 	
 	.content_copy p{
-		width: 90%;
-		padding: 10px;
+		width: 80%;
+		padding: 10px 40px;
 		margin: 0 auto;
 	}
 	
@@ -774,7 +795,7 @@ input:checked ~ nav ul li a{
 	}
 	
 	.sub_col_copy p {
-		margin: 25px 20px;
+		margin: 25px 50px;
 	}
 	
 	.narrow {
@@ -826,6 +847,8 @@ input:checked ~ nav ul li a{
 	
 	.content_copy {
 		position: relative;
+		box-sizing: border-box;
+		/* padding: 50px; */
 	}
 	
 	.center {
