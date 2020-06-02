@@ -51,7 +51,6 @@ html, body, div, section, h1, h2, h3, p, ul, li, a{
 	src: url('../fonts/made_evolve_sans_regular.otf') format('opentype'),
 		url('../fonts/made_evolve_sans_regular.ttf') format('truetype'),
 		url('../fonts/made_evolve_sans_regular.woff') format('woff');
-
     font-weight: normal;
     font-style: normal;
 }
@@ -205,7 +204,7 @@ footer hr {
 }
 
 #hamburger, #cross {
-	position: fixed;
+	position: absolute;
 	top: 30px;
 	right: 30px;
 	padding: 5px;
@@ -215,6 +214,7 @@ footer hr {
 
 #cross {
 	display: none;
+	position: fixed;
 }
 
 #hamburger:hover, #cross:hover {
@@ -257,11 +257,13 @@ nav ul li a {
 	display: block;
 	padding: 30px;
 	margin: 0 auto;
+	width: fit-content;
 }
 
 nav ul li a:hover, .active{
 	border-bottom: solid 2px;
 	border-bottom-color: #e7ad3c;
+	/* border-bottom-style: inset; */
 }
 
 
@@ -568,7 +570,7 @@ nav ul li a:hover, .active{
 	}
 	
 	nav ul li {
-		height: 12vh;
+		/* height: 12vh; */
 	}
 	
 	.sub_nav {
@@ -665,6 +667,10 @@ nav ul li a:hover, .active{
 	
 	.content_visit .sub_container {
 		flex-direction: column;
+	}
+
+	.content_involve .content_copy {
+		margin: 40px auto;
 	}
 	
 	#img_explore, #img_exhibitions, #img_kids, #img_teacher, #img_researcher, #img_evolution, #img_robotics, #img_cosmology, #img_professor, #img_night, #img_energy, #img_biology, #img_ecology {
@@ -839,8 +845,13 @@ nav ul li a:hover, .active{
 		width: 50%;
 	}
 	
-	.content_visit p {
+	.content_visit  {
 		width: 60%;
+	}
+
+	.content_involve .content_copy{
+		width: 75%;
+		margin: 40px auto;
 	}
 	
 	.map_container iframe {
