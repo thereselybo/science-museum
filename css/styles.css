@@ -216,8 +216,9 @@ footer h3 {
   transform: scale(1.1);
 }
 
-.sub_nav p {
+.sub_nav h3 {
   font-size: 1.5em;
+  font-weight: 400;
   color: white;
   width: 90%;
   margin: 0 auto;
