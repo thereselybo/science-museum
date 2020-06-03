@@ -1,134 +1,157 @@
 <!doctype html>
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="description" content="Interactive science museum in Oslo. Explore our many exciting exhibition spaces">
-		<meta name="keywords" content="science, science museum, museum, interactive museum, community, technology museum, evolution exhibition, biology exhibition, medicine exhibition, robotics exhibition, ai, artificial intelligence, ai exhibition, ecology exhibition, cosmology exhibition">
-		<meta name="author" content="Therese Lybo">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="./css/styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap" rel="stylesheet">
-		<script src="https://kit.fontawesome.com/1f3ab86c3a.js"></script>
-		<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.svg">
-		<title>Community Science Museum - Exhibitions</title>
-	</head>
-	<body>
-		<div id="spinner">
-			<i class="fas fa-spinner fa-pulse"></i>
-		</div>
-		<header role="banner" class="invisible">
-			<div class="nav">
-				<a href="./index.html" id="logo"></a>
-				<img src="./images/icon_menu.svg" alt="Open menu icon" id="hamburger">
-				<img src="./images/icon_cross.svg" alt="Cross out menu icon" id="cross">
-				<nav role="navigation" class="mainnav">
-					<ul>
-						<li><a href="./index.html">Home</a></li>
-						<li><a href="./explore.html">Explore</a></li>
-						<li><a href="./exhibitions.html" class="active">Exhibition Spaces</a></li>
-						<li><a href="./events.html">Special Events</a></li>
-						<li><a href="./visit.html">Visit</a></li>
-						<li><a href="./involve.html">Get Involved</a></li>
-					</ul>  
-				</nav>
-			</div>
-			<section class="hero" id="hero_exhibitions">
-                <div class="header_content">
-                    <a href="./index.html"><img src="./images/logo.svg" class="logo_icon" alt="Logo"></a>
-                    <h2>"Explore together"</h2>
-                </div>
-            </section>
-		</header>
-		<main class="content_exhibitions invisible">
-			<h1>Exhibition spaces</h1>
-			<section class="col_container">
-				<section class="col_1 sub_container">
-					<div class="col_left sub_col_1">
-						<div class="img_content" id="img_evolution">
-						</div>
-					</div>
-					<div class="col_right sub_col_2 content_copy">
-						<div class="center">
-							<h2>Evolution</h2>
-							<hr>
-							<p>For centuries, philosophers and scientists have wrestled with the question of our origins. Where do we come from and how did we get here? Since Darwin proposed his theory of evolution we have had a framework for exploring and understanding our place in this world.</p>
-							<p>Discover the origins of life on this planet and how the species we know today have evolved our time. You can also take some time to meet a few of the creatures who didn’t survive, including our Woolly Mammoth, the Dodos, and a number of dinosaurs too.</p>
-						</div>
-					</div>
-				</section>
-				<section class="col_2 sub_container">
-					<div class="col_right sub_col_1">
-						<div class="img_content" id="img_biology">
-						</div>
-					</div>
-					<div class="col_left sub_col_2 content_copy">
-						<div class="center">
-							<h2>Biology and medicine</h2>
-							<hr>
-							<p>From micro-organisms to the human body, major breakthroughs in biology are offering us unique insights into the great wonders of the tiny world. </p>
-							<p>For many people their life expectancy is much longer and their quality of life much improved, thanks to the growth of our understanding of medicine. Over a series of exhibits we explore the history of medicine and take a look at some major breakthroughs including the discovery of penicillin and the first heart transplant.</p>
-							<p>Many of our great medicinal discoveries have come not only from the lab, but also from observing animals in the wild. Often our fellow creatures have beat us to it.</p>
-						</div>
-					</div>
-				</section>
-				<section class="col_3 sub_container">
-					<div class="col_left sub_col_1">
-						<div class="img_content" id="img_robotics">
-						</div>
-					</div>
-					<div class="col_right sub_col_2 content_copy">
-						<div class="center">
-							<h2>Robotics and AI</h2>
-							<hr>
-							<p>The information revolution is here and robotics and artificial intelligence are the science of the future. From useful home applications of AI to industrial uses of robotics, the future is here. You can even say hello and shake the hand of Rob the Robot.</p>
-						</div>
-					</div>
-				</section>
-				<section class="col_4 sub_container">
-					<div class="col_right sub_col_1">
-						<div class="img_content" id="img_ecology"></div>
-					</div>
-					<div class="col_left sub_col_2 content_copy">
-						<div class="center">
-							<h2>Ecology</h2>
-							<hr>
-							<p>As we learn more and more of the impact humans are having on the planet, the more important it becomes that scientists explore how to create a sustainable future not just for humans but for the whole planet.</p>
-							<p>In our ecology section of the museum, we unpack the dangers we currently face including global warming, extinction of species, and pollution. But we also focus on the positive ways we can all contribute to a brighter future.</p>
-						</div>
-					</div>
-				</section>
-				<section class="col_5 sub_container">
-					<div class="col_left sub_col_1">
-						<div class="img_content" id="img_cosmology">
-						</div>
-					</div>
-					<div class="col_right sub_col_2 content_copy">
-						<div class="center">
-							<h2>Cosmology</h2>
-							<hr>
-							<p>Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’, explores the night sky and what we can see and know about the universe around us. We’ll locate the various constellations and galaxies that can be seen and learn a bit about the early navigators who used the stars to travel by.</p>
-							<p>Follow the journey of our solar exploration: from early Arab traders, to Galileo’s telescope, to the latest exploration of the planets in our solar system.</p>
-						</div>
-					</div>
-				</section>
-			</section>
-		</main>
-		<footer role="contentinfo" class="invisible">
-			<hr>
-			<section class="contact_info">
-				<h3>Contact us</h3>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Interactive science museum in Oslo. Explore our many exciting exhibition spaces">
+	<meta name="keywords"
+		content="science, science museum, museum, interactive museum, community, technology museum, evolution exhibition, biology exhibition, medicine exhibition, robotics exhibition, ai, artificial intelligence, ai exhibition, ecology exhibition, cosmology exhibition">
+	<meta name="author" content="Therese Lybo">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/1f3ab86c3a.js"></script>
+	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.svg">
+	<title>Community Science Museum - Exhibitions</title>
+</head>
+
+<body>
+	<div id="spinner">
+		<i class="fas fa-spinner fa-pulse"></i>
+	</div>
+	<header role="banner" class="invisible">
+		<div class="nav">
+			<a href="./index.html" id="logo"></a>
+			<img src="./images/icon_menu.svg" alt="Open menu icon" id="hamburger">
+			<img src="./images/icon_cross.svg" alt="Cross out menu icon" id="cross">
+			<nav role="navigation" class="mainnav">
 				<ul>
-					<li>+47 123 45 678</li>
-					<li>mail@sciencemuseum.no</li>
-					<li>Mølleparken 4, 0459 Oslo</li>
+					<li><a href="./index.html">Home</a></li>
+					<li><a href="./explore.html">Explore</a></li>
+					<li><a href="./exhibitions.html" class="active">Exhibition Spaces</a></li>
+					<li><a href="./events.html">Special Events</a></li>
+					<li><a href="./visit.html">Visit</a></li>
+					<li><a href="./involve.html">Get Involved</a></li>
 				</ul>
-				<a href="#" target="_blank" title="Follow us on Facebook"><i class="fab fa-facebook-square"></i></a>
-				<a href="#" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
-				<a href="#" target="_blank" title="Follow us on LinkedIn"><i class="fab fa-linkedin"></i></a>
+			</nav>
+		</div>
+		<section class="hero" id="hero_exhibitions">
+			<div class="header_content">
+				<a href="./index.html"><img src="./images/logo.svg" class="logo_icon" alt="Logo"></a>
+				<h2>"Explore together"</h2>
+			</div>
+		</section>
+	</header>
+	<main class="content_exhibitions invisible">
+		<h1>Exhibition spaces</h1>
+		<section class="col_container">
+			<section class="col_1 sub_container">
+				<div class="col_left sub_col_1">
+					<div class="img_content" id="img_evolution">
+					</div>
+				</div>
+				<div class="col_right sub_col_2 content_copy">
+					<div class="center">
+						<h2>Evolution</h2>
+						<hr>
+						<p>For centuries, philosophers and scientists have wrestled with the question of our origins.
+							Where do we come from and how did we get here? Since Darwin proposed his theory of evolution
+							we have had a framework for exploring and understanding our place in this world.</p>
+						<p>Discover the origins of life on this planet and how the species we know today have evolved
+							our time. You can also take some time to meet a few of the creatures who didn’t survive,
+							including our Woolly Mammoth, the Dodos, and a number of dinosaurs too.</p>
+					</div>
+				</div>
 			</section>
-		</footer>
-		<script src="./js/fadein.js"></script>
-		<script src="./js/nav.js"></script>
-	</body>
+			<section class="col_2 sub_container">
+				<div class="col_right sub_col_1">
+					<div class="img_content" id="img_biology">
+					</div>
+				</div>
+				<div class="col_left sub_col_2 content_copy">
+					<div class="center">
+						<h2>Biology and medicine</h2>
+						<hr>
+						<p>From micro-organisms to the human body, major breakthroughs in biology are offering us unique
+							insights into the great wonders of the tiny world. </p>
+						<p>For many people their life expectancy is much longer and their quality of life much improved,
+							thanks to the growth of our understanding of medicine. Over a series of exhibits we explore
+							the history of medicine and take a look at some major breakthroughs including the discovery
+							of penicillin and the first heart transplant.</p>
+						<p>Many of our great medicinal discoveries have come not only from the lab, but also from
+							observing animals in the wild. Often our fellow creatures have beat us to it.</p>
+					</div>
+				</div>
+			</section>
+			<section class="col_3 sub_container">
+				<div class="col_left sub_col_1">
+					<div class="img_content" id="img_robotics">
+					</div>
+				</div>
+				<div class="col_right sub_col_2 content_copy">
+					<div class="center">
+						<h2>Robotics and AI</h2>
+						<hr>
+						<p>The information revolution is here and robotics and artificial intelligence are the science
+							of the future. From useful home applications of AI to industrial uses of robotics, the
+							future is here. You can even say hello and shake the hand of Rob the Robot.</p>
+					</div>
+				</div>
+			</section>
+			<section class="col_4 sub_container">
+				<div class="col_right sub_col_1">
+					<div class="img_content" id="img_ecology"></div>
+				</div>
+				<div class="col_left sub_col_2 content_copy">
+					<div class="center">
+						<h2>Ecology</h2>
+						<hr>
+						<p>As we learn more and more of the impact humans are having on the planet, the more important
+							it becomes that scientists explore how to create a sustainable future not just for humans
+							but for the whole planet.</p>
+						<p>In our ecology section of the museum, we unpack the dangers we currently face including
+							global warming, extinction of species, and pollution. But we also focus on the positive ways
+							we can all contribute to a brighter future.</p>
+					</div>
+				</div>
+			</section>
+			<section class="col_5 sub_container">
+				<div class="col_left sub_col_1">
+					<div class="img_content" id="img_cosmology">
+					</div>
+				</div>
+				<div class="col_right sub_col_2 content_copy">
+					<div class="center">
+						<h2>Cosmology</h2>
+						<hr>
+						<p>Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’, explores the
+							night sky and what we can see and know about the universe around us. We’ll locate the
+							various constellations and galaxies that can be seen and learn a bit about the early
+							navigators who used the stars to travel by.</p>
+						<p>Follow the journey of our solar exploration: from early Arab traders, to Galileo’s telescope,
+							to the latest exploration of the planets in our solar system.</p>
+					</div>
+				</div>
+			</section>
+		</section>
+	</main>
+	<footer role="contentinfo" class="invisible">
+		<hr>
+		<section class="contact_info">
+			<h3>Contact us</h3>
+			<ul>
+				<li>+47 123 45 678</li>
+				<li>mail@sciencemuseum.no</li>
+				<li>Mølleparken 4, 0459 Oslo</li>
+			</ul>
+			<a href="#" target="_blank" title="Follow us on Facebook"><i class="fab fa-facebook-square"></i></a>
+			<a href="#" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+			<a href="#" target="_blank" title="Follow us on LinkedIn"><i class="fab fa-linkedin"></i></a>
+		</section>
+	</footer>
+	<script src="./js/fadein.js"></script>
+	<script src="./js/nav.js"></script>
+</body>
+
 </html>

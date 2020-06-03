@@ -1,98 +1,110 @@
 <!doctype html>
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="description" content="Interactive science museum in Oslo. Come and visit us on our upcoming special events">
-		<meta name="keywords" content="science, science museum, museum, interactive museum, community, technology museum, science events, aeronautic event, night in museum, energetica exhibition, special events, special exhibitions">
-		<meta name="author" content="Therese Lybo">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="./css/styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap" rel="stylesheet">
-		<script src="https://kit.fontawesome.com/1f3ab86c3a.js"></script>
-		<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.svg">
-		<title>Community Science Museum - Events</title>
-	</head>
-	<body>
-		<div id="spinner">
-			<i class="fas fa-spinner fa-pulse"></i>
-		</div>
-		<header role="banner" class="invisible">
-			<div class="nav">
-				<a href="./index.html" id="logo"></a>
-				<img src="./images/icon_menu.svg" alt="Open menu icon" id="hamburger">
-				<img src="./images/icon_cross.svg" alt="Cross out menu icon" id="cross">
-				<nav role="navigation" class="mainnav">
-					<ul>
-						<li><a href="./index.html">Home</a></li>
-						<li><a href="./explore.html">Explore</a></li>
-						<li><a href="./exhibitions.html">Exhibition Spaces</a></li>
-						<li><a href="./events.html" class="active">Special Events</a></li>
-						<li><a href="./visit.html">Visit</a></li>
-						<li><a href="./involve.html">Get Involved</a></li>
-					</ul>  
-				</nav>
-			</div>
-			<section class="hero" id="hero_events">
-                <div class="header_content">
-					<a href="./index.html"><img src="./images/logo.svg" class="logo_icon" alt="Logo"></a>
-                    <h2>"Explore together"</h2>
-                </div>
-            </section>
-		</header>
-		<main class="content_events invisible">
-			<h1>Special events and exhibitions</h1>
-			<h2>News</h2>
-			<hr>
-			<section class="col_container">
-				<div class="col_1 sub_container news_article" id="aeronautics">
-					<div class="sub_col_1">
-						<div class="img_content" id="img_professor">
-						</div>
-					</div>
-					<div class="sub_col_2 col_copy">
-						<h3>Visiting Professor of Aeronautics</h3>
-						<p>It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology will be delivering 3 lectures on the development of aeronautics and where the future lies in this exciting ‘space’.</p>
-					</div>
-					
-				</div>
-				<div class="col_2 sub_container news_article" id="museum_night">
-					<div class="sub_col_1">
-						<div class="img_content" id="img_night">
-						</div>
-					</div>
-					<div class="sub_col_2 col_copy">
-						<h3>Night in the Museum</h3>
-						<p>Get your family together for an exciting night in the museum as you sleep over beside dinosaurs and science displays. Bring your own sleeping bag and get ready to rough it as we go exploring the wonders of science.</p>
-					</div>
-				</div>
-				<div class="col_3 sub_container news_article" id="energetica">
-					<div class="sub_col_1">
-						<div class="img_content" id="img_energy">
-						</div>
-					</div>
-					<div class="sub_col_2 col_copy">
-						<h3>Energetica Exhibition on Loan</h3>
-						<p>On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition is coming to the Community Science Museum. It’s a series of installations that allow visitors to experience the power of the elements as we harness them. From solar energy powering lighting, to ‘Wind Island’ that shows how turbines are able to use and control wind to create power.</p>
-					</div>
-				</div>
-			</section>
-		</main>
-		<footer role="contentinfo" class="invisible">
-			<hr>
-			<section class="contact_info">
-				<h3>Contact us</h3>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description"
+		content="Interactive science museum in Oslo. Come and visit us on our upcoming special events">
+	<meta name="keywords"
+		content="science, science museum, museum, interactive museum, community, technology museum, science events, aeronautic event, night in museum, energetica exhibition, special events, special exhibitions">
+	<meta name="author" content="Therese Lybo">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/1f3ab86c3a.js"></script>
+	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.svg">
+	<title>Community Science Museum - Events</title>
+</head>
+
+<body>
+	<div id="spinner">
+		<i class="fas fa-spinner fa-pulse"></i>
+	</div>
+	<header role="banner" class="invisible">
+		<div class="nav">
+			<a href="./index.html" id="logo"></a>
+			<img src="./images/icon_menu.svg" alt="Open menu icon" id="hamburger">
+			<img src="./images/icon_cross.svg" alt="Cross out menu icon" id="cross">
+			<nav role="navigation" class="mainnav">
 				<ul>
-					<li>+47 123 45 678</li>
-					<li>mail@sciencemuseum.no</li>
-					<li>Mølleparken 4, 0459 Oslo</li>
+					<li><a href="./index.html">Home</a></li>
+					<li><a href="./explore.html">Explore</a></li>
+					<li><a href="./exhibitions.html">Exhibition Spaces</a></li>
+					<li><a href="./events.html" class="active">Special Events</a></li>
+					<li><a href="./visit.html">Visit</a></li>
+					<li><a href="./involve.html">Get Involved</a></li>
 				</ul>
-				<a href="#" target="_blank" title="Follow us on Facebook"><i class="fab fa-facebook-square"></i></a>
-				<a href="#" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
-				<a href="#" target="_blank" title="Follow us on LinkedIn"><i class="fab fa-linkedin"></i></a>
-			</section>
-		</footer>
-		<script src="./js/fadein.js"></script>
-		<script src="./js/nav.js"></script>
-	</body>
+			</nav>
+		</div>
+		<section class="hero" id="hero_events">
+			<div class="header_content">
+				<a href="./index.html"><img src="./images/logo.svg" class="logo_icon" alt="Logo"></a>
+				<h2>"Explore together"</h2>
+			</div>
+		</section>
+	</header>
+	<main class="content_events invisible">
+		<h1>Special events and exhibitions</h1>
+		<h2>News</h2>
+		<hr>
+		<section class="col_container">
+			<div class="col_1 sub_container news_article" id="aeronautics">
+				<div class="sub_col_1">
+					<div class="img_content" id="img_professor">
+					</div>
+				</div>
+				<div class="sub_col_2 col_copy">
+					<h3>Visiting Professor of Aeronautics</h3>
+					<p>It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of
+						Technology will be delivering 3 lectures on the development of aeronautics and where the future
+						lies in this exciting ‘space’.</p>
+				</div>
+
+			</div>
+			<div class="col_2 sub_container news_article" id="museum_night">
+				<div class="sub_col_1">
+					<div class="img_content" id="img_night">
+					</div>
+				</div>
+				<div class="sub_col_2 col_copy">
+					<h3>Night in the Museum</h3>
+					<p>Get your family together for an exciting night in the museum as you sleep over beside dinosaurs
+						and science displays. Bring your own sleeping bag and get ready to rough it as we go exploring
+						the wonders of science.</p>
+				</div>
+			</div>
+			<div class="col_3 sub_container news_article" id="energetica">
+				<div class="sub_col_1">
+					<div class="img_content" id="img_energy">
+					</div>
+				</div>
+				<div class="sub_col_2 col_copy">
+					<h3>Energetica Exhibition on Loan</h3>
+					<p>On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition is coming to the
+						Community Science Museum. It’s a series of installations that allow visitors to experience the
+						power of the elements as we harness them. From solar energy powering lighting, to ‘Wind Island’
+						that shows how turbines are able to use and control wind to create power.</p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer role="contentinfo" class="invisible">
+		<hr>
+		<section class="contact_info">
+			<h3>Contact us</h3>
+			<ul>
+				<li>+47 123 45 678</li>
+				<li>mail@sciencemuseum.no</li>
+				<li>Mølleparken 4, 0459 Oslo</li>
+			</ul>
+			<a href="#" target="_blank" title="Follow us on Facebook"><i class="fab fa-facebook-square"></i></a>
+			<a href="#" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+			<a href="#" target="_blank" title="Follow us on LinkedIn"><i class="fab fa-linkedin"></i></a>
+		</section>
+	</footer>
+	<script src="./js/fadein.js"></script>
+	<script src="./js/nav.js"></script>
+</body>
+
 </html>

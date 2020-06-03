@@ -1,122 +1,154 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="description" content="Interactive science museum in Oslo">
-		<meta name="keywords" content="science, science museum, museum, interactive museum, community, technology museum">
-		<meta name="author" content="Therese Lybo">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="./css/styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap" rel="stylesheet">
-		<script src="https://kit.fontawesome.com/1f3ab86c3a.js"></script>
-		<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.svg">
-		<title>Community Science Museum</title>
-	</head>
-	<body>
-		<div id="spinner">
-			<i class="fas fa-spinner fa-pulse"></i>
-		</div>
-		<header role="banner" class="clearfix invisible">
-			<div class="nav">
-				<a href="./index.html" id="logo"></a>
-				<img src="./images/icon_menu.svg" alt="Open menu icon" id="hamburger">
-				<img src="./images/icon_cross.svg" alt="Cross out menu icon" id="cross">
-				<nav role="navigation" class="mainnav">
-					<ul>
-						<li><a href="./index.html" class="active">Home</a></li>
-						<li><a href="./explore.html">Explore</a></li>
-						<li><a href="./exhibitions.html">Exhibition Spaces</a></li>
-						<li><a href="./events.html">Special Events</a></li>
-						<li><a href="./visit.html">Visit</a></li>
-						<li><a href="./involve.html">Get Involved</a></li>
-					</ul>  
-				</nav>
-			</div>
-			<section class="hero" id="hero_index">
-                <div class="header_content">
-					<a href="./index.html"><img src="./images/logo.svg" class="logo_icon" alt="Logo"></a>
-                    <h2>"Explore together"</h2>
-                </div>
-            </section>
-            <section class="sub_nav clearfix">
-                <div class="sub_nav_col1">
-                    <a href="./events.html">
-						<img src="./images/icon_events.svg" class="icon" id="icon_events" height="50" alt="Event icon">
-						<hr>
-						<p>Special events</p>
-					</a>
-                </div>
-                <div class="sub_nav_col2">
-					<a href="./visit.html">
-                    	<img src="./images/icon_visit.svg" class="icon" id="icon_visit" height="50" alt="Visit icon">
-                    	<hr>
-                    	<p>Visit</p>
-					</a>
-                </div>
-                <div class="sub_nav_col3">
-					<a href="./involve.html">
-						<img src="./images/icon_involve.svg" class="icon" id="icon_involve" height="50" alt="Get involved icon">
-						<hr>
-						<p>Get involved</p>
-					</a>
-                </div>
-            </section>
-		</header>
-		<main class="content_index invisible">
-			<section class="col_container">
-				<section class="col_1 copy_wide">
-					<h1>Welcome to the Community Science Museum</h1>
-					<p>Come join us at the Community Science Museum where we’re committed to making science accessible to all.</p>
-					<p>Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.</p>
-					<p>The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and perhaps even ignite a lifelong passion to continue the exploration of the world around us.</p>
-					<p>We believe science should not be confined to the textbook, but brought to live through exhibits. This is why we have over 1000 different exhibits on the many varied subjects of science to explore. Many of these exhibits are designed for you to interact with and play around to see science come to life (apart from the dinosaur exhibits – they only come to life at night when everyone’s gone home).</p>
-				</section>
-				<section class="col_2 sub_container">
-					<a href="./explore.html" class="col_left sub_col_1">
-						<div class="img_content" id="img_explore">
-						</div>
-					</a>
-					<div class="col_right sub_col_copy sub_col_2">
-						<a href="./explore.html"><h2>Explore</h2></a> 
-						<hr>
-						<p>Are you a young person looking to learn more about science? Come on down to our museum, there's plenty to see and do.</p>
-						<a href="./explore.html">
-							<div class="btn">Read more</div>
-						</a> 
-					</div>
-				</section>
-				<section class="col_3 sub_container">
-					<a href="./exhibitions.html" class="col_right sub_col_1 ">
-						<div class="img_content" id="img_exhibitions">
-						</div>
-					</a>
-					<div class="col_left sub_col_copy sub_col_2">
-						<a href="./exhibitions.html"><h2>Exhibitions</h2></a>
-						<hr>
-						<p>Are you interested in our exhibition spaces? Have a look at what areas you might stumble upon during your visit.</p>
-						<a href="./exhibitions.html">
-							<div class="btn">Read more</div>
-						</a>
-					</div>
-				</section>
-			</section>
-		</main>
-		<footer role="contentinfo" class="invisible">
-			<hr>
-			<section class="contact_info">
-				<h3>Contact us</h3>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Interactive science museum in Oslo" />
+	<meta name="keywords" content="science, science museum, museum, interactive museum, community, technology museum" />
+	<meta name="author" content="Therese Lybo" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="./css/styles.css" />
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap" rel="stylesheet" />
+	<script src="https://kit.fontawesome.com/1f3ab86c3a.js"></script>
+	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.svg" />
+	<title>Community Science Museum</title>
+</head>
+
+<body>
+	<div id="spinner">
+		<i class="fas fa-spinner fa-pulse"></i>
+	</div>
+	<header role="banner" class="clearfix invisible">
+		<div class="nav">
+			<a href="./index.html" id="logo"></a>
+			<img src="./images/icon_menu.svg" alt="Open menu icon" id="hamburger" />
+			<img src="./images/icon_cross.svg" alt="Cross out menu icon" id="cross" />
+			<nav role="navigation" class="mainnav">
 				<ul>
-					<li>+47 123 45 678</li>
-					<li>mail@sciencemuseum.no</li>
-					<li>Mølleparken 4, 0459 Oslo</li>
+					<li><a href="./index.html" class="active">Home</a></li>
+					<li><a href="./explore.html">Explore</a></li>
+					<li><a href="./exhibitions.html">Exhibition Spaces</a></li>
+					<li><a href="./events.html">Special Events</a></li>
+					<li><a href="./visit.html">Visit</a></li>
+					<li><a href="./involve.html">Get Involved</a></li>
 				</ul>
-				<a href="#" target="_blank" title="Follow us on Facebook"><i class="fab fa-facebook-square"></i></a>
-				<a href="#" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
-				<a href="#" target="_blank" title="Follow us on LinkedIn"><i class="fab fa-linkedin"></i></a>
+			</nav>
+		</div>
+		<section class="hero" id="hero_index">
+			<div class="header_content">
+				<a href="./index.html"><img src="./images/logo.svg" class="logo_icon" alt="Logo" /></a>
+				<h2>"Explore together"</h2>
+			</div>
+		</section>
+		<section class="sub_nav clearfix">
+			<div class="sub_nav_col1">
+				<a href="./events.html">
+					<img src="./images/icon_events.svg" class="icon" id="icon_events" height="50" alt="Event icon" />
+					<hr />
+					<p>Special events</p>
+				</a>
+			</div>
+			<div class="sub_nav_col2">
+				<a href="./visit.html">
+					<img src="./images/icon_visit.svg" class="icon" id="icon_visit" height="50" alt="Visit icon" />
+					<hr />
+					<p>Visit</p>
+				</a>
+			</div>
+			<div class="sub_nav_col3">
+				<a href="./involve.html">
+					<img src="./images/icon_involve.svg" class="icon" id="icon_involve" height="50"
+						alt="Get involved icon" />
+					<hr />
+					<p>Get involved</p>
+				</a>
+			</div>
+		</section>
+	</header>
+	<main class="content_index invisible">
+		<section class="col_container">
+			<section class="col_1 copy_wide">
+				<h1>Welcome to the Community Science Museum</h1>
+				<p>
+					Come join us at the Community Science Museum where we’re committed
+					to making science accessible to all.
+				</p>
+				<p>
+					Over the course of human history, science has developed from our
+					early understanding of fire, wind, water, and earth to exploring
+					everything from galaxies far away to the very building blocks of
+					life itself.
+				</p>
+				<p>
+					The aim of our museum is to create a space where everyone can
+					experience the wonders of our discoveries and perhaps even ignite a
+					lifelong passion to continue the exploration of the world around us.
+				</p>
+				<p>
+					We believe science should not be confined to the textbook, but
+					brought to live through exhibits. This is why we have over 1000
+					different exhibits on the many varied subjects of science to
+					explore. Many of these exhibits are designed for you to interact
+					with and play around to see science come to life (apart from the
+					dinosaur exhibits – they only come to life at night when everyone’s
+					gone home).
+				</p>
 			</section>
-		</footer>
-		<script src="./js/fadein.js"></script>
-		<script src="./js/nav.js"></script>
-	</body>
+			<section class="col_2 sub_container">
+				<a href="./explore.html" class="col_left sub_col_1">
+					<div class="img_content" id="img_explore"></div>
+				</a>
+				<div class="col_right sub_col_copy sub_col_2">
+					<a href="./explore.html">
+						<h2>Explore</h2>
+					</a>
+					<hr />
+					<p>
+						Are you a young person looking to learn more about science? Come
+						on down to our museum, there's plenty to see and do.
+					</p>
+					<a href="./explore.html">
+						<div class="btn">Read more</div>
+					</a>
+				</div>
+			</section>
+			<section class="col_3 sub_container">
+				<a href="./exhibitions.html" class="col_right sub_col_1">
+					<div class="img_content" id="img_exhibitions"></div>
+				</a>
+				<div class="col_left sub_col_copy sub_col_2">
+					<a href="./exhibitions.html">
+						<h2>Exhibitions</h2>
+					</a>
+					<hr />
+					<p>
+						Are you interested in our exhibition spaces? Have a look at what
+						areas you might stumble upon during your visit.
+					</p>
+					<a href="./exhibitions.html">
+						<div class="btn">Read more</div>
+					</a>
+				</div>
+			</section>
+		</section>
+	</main>
+	<footer role="contentinfo" class="invisible">
+		<hr />
+		<section class="contact_info">
+			<h3>Contact us</h3>
+			<ul>
+				<li>+47 123 45 678</li>
+				<li>mail@sciencemuseum.no</li>
+				<li>Mølleparken 4, 0459 Oslo</li>
+			</ul>
+			<a href="#" target="_blank" title="Follow us on Facebook"><i class="fab fa-facebook-square"></i></a>
+			<a href="#" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+			<a href="#" target="_blank" title="Follow us on LinkedIn"><i class="fab fa-linkedin"></i></a>
+		</section>
+	</footer>
+	<script src="./js/fadein.js"></script>
+	<script src="./js/nav.js"></script>
+</body>
+
 </html>
