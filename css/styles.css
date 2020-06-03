@@ -66,7 +66,7 @@ body {
 }
 
 h1{
-	font-family: 'MADE Evolve Sans EVO', sans-serif;
+	font-family: 'MADE Evolve Sans EVO', 'Trebuchet MS', sans-serif;
 	font-size: 1.8em;
 	text-transform: uppercase;
 	color: #127675;
@@ -75,7 +75,7 @@ h1{
 }
 
 h2{
-	font-family: 'MADE Evolve Sans', sans-serif;
+	font-family: 'MADE Evolve Sans', 'Trebuchet MS', sans-serif;
 	font-size: 1.5em;
 	text-transform: uppercase;
 	color: #127675;
@@ -84,8 +84,8 @@ h2{
 }
 
 h3 {
-    font-family: 'Source Sans Pro', 'Trebuchet MS', sans-serif;
-    font-size: 1.25em;
+    font-family: 'MADE Evolve Sans', 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
     font-weight: 700;
 }
 
@@ -128,7 +128,10 @@ header h2 {
 	position: absolute;
 	left: 0;
 	margin: 30px;
-
+	width: 200px;
+	height: 50px;
+	background-image: url(../images/logo_full.svg);
+	z-index: 40;
 }
 
 .contact_info {
@@ -150,6 +153,10 @@ header h2 {
 footer hr {
 	width: 300px;
 	margin-top: 45px;
+}
+
+footer h3 {
+	font-size: 1.25em;
 }
 
 .fab {
@@ -192,6 +199,8 @@ footer hr {
 .sub_nav p{
 	font-size: 1.5em;
 	color: white;
+	width: 90%;
+	margin: 0 auto;
 }
 
 .sub_nav a{
@@ -392,6 +401,10 @@ nav ul li a:hover, .active{
 	position: relative;	
 }
 
+.content_exhibitions .content_copy {
+	padding: 16px 0;
+}
+
 /* Events 
 ----------- */
 #hero_events {
@@ -409,10 +422,24 @@ nav ul li a:hover, .active{
 	background-color: #fff;
 	width: 80%;
 	margin: 0 auto 30px auto;
+	text-align: left;
+	box-shadow: 0px 4px 8px 1px rgba(234,234,234,0.5);
 }
 
+.news_article h3 {
+	color: #127675;
+	margin-bottom: 16px;
+}
+
+.news_article p {
+	margin: 0;
+	color: #677a7a;
+}
+
+
+
 .col_copy{
-	padding: 20px 10px;
+	padding: 24px;
 }
 
 /* Visit
@@ -488,10 +515,11 @@ nav ul li a:hover, .active{
 	
 	.sub_nav div{
 		height: 150px;
-		padding: 20px;
+		padding: 20px 0;
 		margin: -100px 5px 0;
 		overflow: visible;
 	}
+
 	
 	.copy_wide {
 		width: 80%;
@@ -750,6 +778,7 @@ nav ul li a:hover, .active{
 	nav ul li a {
 		padding: 20px 10px;
 		margin: 0 10px;
+		text-shadow: black 0 0 20px;
 	}
 
 	#hamburger, #cross {
@@ -821,6 +850,12 @@ nav ul li a:hover, .active{
 		display: flex;
 		flex-direction: row;
 	}
+
+	.content_events {
+		max-width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	
 	.content_events .col_container {
 		display: flex;
@@ -846,7 +881,8 @@ nav ul li a:hover, .active{
 	}
 	
 	.content_visit  {
-		width: 60%;
+		width: 70%;
+		max-width: 1000px;
 	}
 
 	.content_involve .content_copy{
@@ -878,7 +914,7 @@ nav ul li a:hover, .active{
 	
 	.content_events .col_1, .content_events .col_2, .content_events .col_3 {
 		flex: 1;
-		margin: 0 40px;
+		margin: 0 24px;
 	}
 	
 	.col_left {
