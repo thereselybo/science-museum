@@ -456,6 +456,8 @@ nav ul li a:hover, .active{
 
 .map_container iframe {
 	width: 100%;
+	height: 400px;
+	margin-bottom: 24px;
 }
 
 .content_visit {
@@ -892,7 +894,6 @@ nav ul li a:hover, .active{
 	
 	.map_container iframe {
 		height: 300px;
-		width: 80%;
 	}
 	
 	.content_copy {
