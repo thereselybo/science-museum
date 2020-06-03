@@ -108,6 +108,39 @@ main p {
 	display: table;
 }
 
+/* Fade in on page load  
+-------------------- */
+/* #spinner_container {
+	position: relative;
+	height: 100vh;
+} */
+
+#spinner {
+	position: absolute;
+	height: 100vh;
+}
+
+.fa-spinner{
+	font-size: 3em;
+	color: #127675;
+	z-index: 50;
+	position: fixed;
+	top: 50%;
+	margin-top: -30px;
+	left: 50%;
+	margin-left: -24px;
+	/* transform: translate(-24px, -30px); */
+}
+
+.invisible {
+	opacity: 0;
+}
+
+.fade_in {
+	opacity: 1;
+	transition: all ease-in .3s;
+}
+
 /* Header and footer 
 --------------------- */
 header {

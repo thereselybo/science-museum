@@ -14,7 +14,10 @@
 		<title>Community Science Museum</title>
 	</head>
 	<body>
-		<header role="banner" class="clearfix">
+		<div id="spinner">
+			<i class="fas fa-spinner fa-pulse"></i>
+		</div>
+		<header role="banner" class="clearfix invisible">
 			<div class="nav">
 				<a href="./index.html" id="logo"></a>
 				<img src="./images/icon_menu.svg" alt="Open menu icon" id="hamburger">
@@ -60,7 +63,7 @@
                 </div>
             </section>
 		</header>
-		<main class="content_index">
+		<main class="content_index invisible">
 			<section class="col_container">
 				<section class="col_1 copy_wide">
 					<h1>Welcome to the Community Science Museum</h1>
@@ -99,7 +102,7 @@
 				</section>
 			</section>
 		</main>
-		<footer role="contentinfo">
+		<footer role="contentinfo" class="invisible">
 			<hr>
 			<section class="contact_info">
 				<h3>Contact us</h3>
@@ -113,6 +116,7 @@
 				<a href="#" target="_blank" title="Follow us on LinkedIn"><i class="fab fa-linkedin"></i></a>
 			</section>
 		</footer>
+		<script src="./js/fadein.js"></script>
 		<script src="./js/nav.js"></script>
 	</body>
 </html>
